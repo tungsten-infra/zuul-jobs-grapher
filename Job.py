@@ -29,8 +29,10 @@ class Job:
         d = defaultdict(lambda: '-')
         d.update(self.__dict__)
 
-        tooltip = """defined in: %(source)s
-
+        tooltip = """description: %(description)s
+        
+defined in: %(source)s
+---
 pre-run: %(pre-run)s
 run: %(run)s
 post-run: %(post-run)s
