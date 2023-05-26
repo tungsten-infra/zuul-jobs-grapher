@@ -6,7 +6,8 @@ class GraphDrawer:
     def __init__(self, output_dir='_output', format='svg'):
 
         self.graph = gv.Digraph(format=format, graph_attr={'overlap':'scale',
-                                                           'sep': '.1'})
+                                                           'sep': '.1'},
+                                                           node_attr={'shape': 'box'})
         self.output_dir = output_dir
 
     def add_nodes(self, nodes):
